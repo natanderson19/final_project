@@ -5,30 +5,14 @@ title_html = '''
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Uppsala, Sweden</title>
+    <title>Natalie's Travels</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <nav>
-  <a href="/index.html" class="site-title-link">
-    <div class="site-title">
-      <img src="images/location_icon.png" alt="">
+    <div class="map-title">
       <span>Natalie's Travels</span>
     </div>
   </a>
-
-  <div class="dropdown">
-    <button class="dropbtn">
-      All Blogs<img src="images/dropdown-icon.png" alt="" class="drop-arrow">
-    </button>
-    <div class="dropdown-content">
-      <a href="/blog/uppsala.html">Uppsala, Sweden</a>
-      <a href="/blog/bergen.html">Bergen, Norway</a>
-      <a href="/blog/dublin.html">Dublin, Ireland</a>
-      <a href="/blog/brussels.html">Brussels, Belgium</a>
-      <a href="/blog/prague.html">Prague, Czech Republic</a>
-    </div>
-  </div>
-
 </nav>
 '''
 
@@ -82,14 +66,17 @@ locations = [
 ]
 
 for place in locations:
-    popup_html = f'<div style="font-size:16px;">My trip to <a href="{place["blog"]}" target="_blank" class=map_links >{place["city"]}</a>!</div>'
-    popup = folium.Popup(popup_html, max_width=500)
-    marker = folium.Marker(
-        location=place["location"],
-        popup=popup,
-        icon=create_custom_icon(place["icon"])
-    )
-    marker.add_to(my_map)
+  popup_html = f'''
+  <div class="map_words" onmouseover="highlightMarker('{place["location"]}')">
+    My trip to <a href="{place["blog"]}" target="_blank" class="map_links">{place["city"]}</a>!
+  </div>
+  '''
+  popup = folium.Popup(popup_html, max_width=500)
+  marker = folium.Marker(
+    location=place["location"],
+    popup=popup,
+    icon=create_custom_icon(place["icon"])
+  )
 
 # Add custom CSS
 css_link = '<link rel="stylesheet" type="text/css" href="css/style.css">'

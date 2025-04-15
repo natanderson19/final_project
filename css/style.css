@@ -12,6 +12,13 @@ html, body {
 .map_links {
     color: #d90e4c !important;
     font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+.map_words {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222;
+    font-size: 12px;
 }
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -19,10 +26,9 @@ body{
 nav, .dropdown, .dropbtn {
     font-family: Playfair Display;
     font-weight: 700;
-    font-style: normal;
-    font-size: 11px;
     letter-spacing: .1em;
     text-transform: uppercase;
+    
 }
 .heading-image {
     width: 100%;
@@ -32,27 +38,29 @@ nav, .dropdown, .dropbtn {
 /* nav styling */
 nav{
     display: flex;
-    background-color: #d90e4c;
-    padding: 20px;
+    background-color: #fbfbfb;
+    padding: 30px;
     align-items: center;
     flex-direction: row;
 }
-nav a {
-    color: #ffffff !important;
-    font-weight: 600;
-    text-decoration: none !important
-}
 
-.site-title {
-    color: #ffffff;
+.site-title, nav a {
+    color: #222 ;
     font-weight: 600;
     padding-left: 10px;
     margin-right: auto;
-    font-size: 20px; 
+    text-decoration: none !important;
+}
+
+.map-title {
+    color: #222;
+    font-weight: 600;
+    font-size: 16px;
+    margin: auto;
 }
 
 .site-title:hover span{
-    text-decoration: underline;
+    color: rgb(130, 130, 130);
 }
 
 nav img {
@@ -61,27 +69,31 @@ nav img {
     vertical-align: middle;
 }
 
+.site-title:hover .site-logo {
+    opacity: 0.7;
+}
+
 /* styling nav dropdown */
 .dropdown {
     position: relative;
     display: inline-block;
     margin-left: auto;
-    background-color: #d90e4c;
+    background-color: #fbfbfb;
     z-index: 1000;
   }
   
-.dropbtn, button {
-    background-color: #d90e4c; 
-    color: white;
+.dropbtn {
+    background-color: #fbfbfb; 
+    color: #222;
     padding: 20px;
     font-weight: 600;
-    font-size: 20px;
     border: none;
     align-items: center;
     margin-left: auto;
+    font-size: 16px;
   }
   
-.drop-arrow {
+/* .drop-arrow {
     margin-left: 8px;
     width: 12px;
     height: auto;
@@ -90,27 +102,26 @@ nav img {
 .dropdown:hover .drop-arrow {
     transform: rotateX(180deg);
     transition: transform 0.2s ease;
-}
+} */
   
 .dropdown-content {
     display: none;
     position: absolute;
     top: 100%; 
-    background-color: #d90e4c;
+    background-color: #fbfbfb;
     min-width: 171px;
     z-index: 1000;
   }
   
 .dropdown-content a {
-    color: white;
+    color: #222;
     padding: 16px;
     text-decoration: none;
     display: block;
-    font-size: 14px;
+    font-size: 12px;
   }
 .dropdown-content a:hover {
-    background-color: white;
-    color: #bb0038 !important;
+    color: rgb(130, 130, 130) !important;
 }
   
 .dropdown:hover .dropdown-content {
@@ -118,8 +129,9 @@ nav img {
     box-shadow: 0px 16px 8px rgba(0, 0, 0, 0.1);
 }
   
-  .dropdown:hover .dropbtn {
-    text-decoration: underline;
+.dropbtn:hover {
+    color: rgb(130, 130, 130);
+    cursor: pointer;
   }
   
 
