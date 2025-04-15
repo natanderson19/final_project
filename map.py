@@ -9,16 +9,16 @@ title_html = '''
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <nav>
-  <a href="/index.html" class="site-title-link">
+  <a href="/final_project/index.html" class="site-title-link">
     <div class="site-title">
-      <img src="/final_project/images/location_icon.png" alt="">
+      <img src="/images/location_icon.png" alt="">
       <span>Natalie's Travels</span>
     </div>
   </a>
 
   <div class="dropdown">
     <button class="dropbtn">
-      All Blogs<img src="../images/dropdown-icon.png" alt="" class="drop-arrow">
+      All Blogs<img src="/images/dropdown-icon.png" alt="" class="drop-arrow">
     </button>
     <div class="dropdown-content">
       <a href="/blog/uppsala.html">Uppsala, Sweden</a>
