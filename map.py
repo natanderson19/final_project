@@ -6,12 +6,12 @@ title_html = '''
 <head>
     <meta charset="UTF-8">
     <title>Uppsala, Sweden</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <nav>
-  <a href="../index.html" class="site-title-link">
+  <a href="/index.html" class="site-title-link">
     <div class="site-title">
-      <img src="../images/location_icon.png" alt="">
+      <img src="/images/location_icon.png" alt="">
       <span>Natalie's Travels</span>
     </div>
   </a>
@@ -21,11 +21,11 @@ title_html = '''
       All Blogs<img src="../images/dropdown-icon.png" alt="" class="drop-arrow">
     </button>
     <div class="dropdown-content">
-      <a href="../blog/uppsala.html">Uppsala, Sweden</a>
-      <a href="../blog/bergen.html">Bergen, Norway</a>
-      <a href="../blog/dublin.html">Dublin, Ireland</a>
-      <a href="../blog/brussels.html">Brussels, Belgium</a>
-      <a href="../blog/prague.html">Prague, Czech Republic</a>
+      <a href="/blog/uppsala.html">Uppsala, Sweden</a>
+      <a href="/blog/bergen.html">Bergen, Norway</a>
+      <a href="/blog/dublin.html">Dublin, Ireland</a>
+      <a href="/blog/brussels.html">Brussels, Belgium</a>
+      <a href="/blog/prague.html">Prague, Czech Republic</a>
     </div>
   </div>
 
