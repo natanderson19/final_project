@@ -66,17 +66,14 @@ locations = [
 ]
 
 for place in locations:
-  popup_html = f'''
-  <div class="map_words" onmouseover="highlightMarker('{place["location"]}')">
-    My trip to <a href="{place["blog"]}" target="_blank" class="map_links">{place["city"]}</a>!
-  </div>
-  '''
-  popup = folium.Popup(popup_html, max_width=500)
-  marker = folium.Marker(
-    location=place["location"],
-    popup=popup,
-    icon=create_custom_icon(place["icon"])
-  )
+    popup_html = f'<div class="map_words">My trip to <a href="{place["blog"]}" target="_blank" class="map_links">{place["city"]}</a>!</div>'
+    popup = folium.Popup(popup_html, max_width=500)
+    marker = folium.Marker(
+        location=place["location"],
+        popup=popup,
+        icon=create_custom_icon(place["icon"])
+    )
+    marker.add_to(my_map)
 
 # Add custom CSS
 css_link = '<link rel="stylesheet" type="text/css" href="css/style.css">'
