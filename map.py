@@ -9,7 +9,7 @@ title_html = '''
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <nav>
-  <a href="/final_project/index.html" class="site-title-link">
+  <a href="/index.html" class="site-title-link">
     <div class="site-title">
       <img src="/images/location_icon.png" alt="">
       <span>Natalie's Travels</span>
