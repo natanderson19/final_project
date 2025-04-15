@@ -11,7 +11,7 @@ title_html = '''
 <nav>
   <a href="/index.html" class="site-title-link">
     <div class="site-title">
-      <img src="/images/location_icon.png" alt="">
+      <img src="/final_project/images/location_icon.png" alt="">
       <span>Natalie's Travels</span>
     </div>
   </a>
