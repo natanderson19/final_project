@@ -17,10 +17,10 @@ title_html = '''
 '''
 
 # Centered roughly on Europe
-map_center = [54.5260, 15.2551]
+map_center = [51.522881, 15.215209] #Grill Bar u Wacka, Poland
 
 # Create the map object
-my_map = folium.Map(location=map_center, tiles="Cartodb Positron", zoom_start=4.5)
+my_map = folium.Map(location=map_center, tiles="Cartodb Positron", zoom_start=4)
 
 my_map.get_root().html.add_child(folium.Element(title_html))
 
