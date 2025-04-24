@@ -81,4 +81,4 @@ css_element = folium.Element(css_link)
 my_map.get_root().html.add_child(css_element)
 
 my_map.save("index.html")
-print("Map generated
+print("Map generated and saved as 'index.html'")
