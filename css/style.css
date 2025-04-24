@@ -316,6 +316,15 @@ figcaption {
     text-align: center;
     margin-top: 0.5rem;
 }
-  
+
+.link {
+    text-decoration: none;
+    font-style: italic;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: rgb(130, 130, 130);
+}
   
 
