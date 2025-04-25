@@ -14,12 +14,12 @@ html, body {
     color: #d90e4c !important;
     font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12px;
+    font-size: 16px;
 }
 .map_words {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #222;
-    font-size: 12px;
+    font-size: 16px;
 }
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -43,7 +43,7 @@ nav{
     padding: 30px;
     align-items: center;
     flex-direction: row;
-}
+    }
 
 .site-title, nav a {
     color: #222 ;
@@ -51,12 +51,13 @@ nav{
     padding-left: 10px;
     margin-right: auto;
     text-decoration: none !important;
+    font-size: 20px;
 }
 
 .map-title {
     color: #222;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 24px;
     margin: auto;
 }
 
@@ -91,35 +92,24 @@ nav img {
     border: none;
     align-items: center;
     margin-left: auto;
-    font-size: 16px;
+    font-size: 20px;
   }
-  
-/* .drop-arrow {
-    margin-left: 8px;
-    width: 12px;
-    height: auto;
-  }
-
-.dropdown:hover .drop-arrow {
-    transform: rotateX(180deg);
-    transition: transform 0.2s ease;
-} */
   
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%; 
+    top: calc(100% + 15px); 
     background-color: #fbfbfb;
     min-width: 171px;
     z-index: 1000;
-  }
+}
   
 .dropdown-content a {
     color: #222;
     padding: 16px;
     text-decoration: none;
     display: block;
-    font-size: 12px;
+    font-size: 18px;
   }
 .dropdown-content a:hover {
     color: rgb(130, 130, 130) !important;
@@ -278,7 +268,17 @@ iframe {
         grid-column: span 1;
         }
 }
-
+.map-links, .map_words {
+    font-size: 12px;}
+.map-title {
+    font-size: 16px;    
+}
+.dropbtn, .site-title {
+    font-size: 16px
+}
+.dropdown-content a {
+    font-size: 14px;
+}
 }
 
   h2 {

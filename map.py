@@ -17,7 +17,7 @@ title_html = '''
 '''
 
 # Centered roughly on Europe
-map_center = [51, 10] 
+map_center = [52.294, 10.4376] 
 
 # Create the map object
 my_map = folium.Map(location=map_center, tiles="Cartodb Positron", zoom_start=4)
@@ -46,12 +46,6 @@ locations = [
         "icon": "images/location_icon.png"
     },
     {
-        "city": "Dublin, Ireland",
-        "location": [53.3498, -6.2603],
-        "blog": "blog/dublin.html",
-        "icon": "images/location_icon.png"
-    },
-    {
         "city": "Brussels, Belgium",
         "location": [50.8503, 4.3517],
         "blog": "blog/brussels.html",
@@ -66,7 +60,7 @@ locations = [
 ]
 
 for place in locations:
-    popup_html = f'<div class="map_words">My trip to <a href="{place["blog"]}" target="_blank" class="map_links">{place["city"]}</a>!</div>'
+    popup_html = f'<div class="map_words">My trip to <a href="{place["blog"]}" class="map_links">{place["city"]}</a>!</div>'
     popup = folium.Popup(popup_html, max_width=500)
     marker = folium.Marker(
         location=place["location"],
