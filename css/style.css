@@ -98,7 +98,7 @@ nav img {
 .dropdown-content {
     display: none;
     position: absolute;
-    top: calc(100% + 15px); 
+    top: 100%;
     background-color: #fbfbfb;
     min-width: 171px;
     z-index: 1000;
