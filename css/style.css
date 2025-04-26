@@ -268,8 +268,9 @@ iframe {
         grid-column: span 1;
         }
 }
-.map-links, .map_words {
+.map-links, .map_words, .map_links{
     font-size: 12px;}
+
 .map-title {
     font-size: 16px;    
 }
@@ -320,11 +321,11 @@ figcaption {
 .link {
     text-decoration: none;
     font-style: italic;
+    color: rgb(116, 116, 116);
 }
 
 .link:hover {
     text-decoration: underline;
-    color: rgb(130, 130, 130);
 }
   
 
